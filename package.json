@@ -10,7 +10,26 @@
     "test": "vitest",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "cm": "cz",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "pnpm run lint",
+      "pnpm run format"
+    ],
+    "**/*.{js,jsx,ts,tsx,css,scss,md,json}": [
+      "pnpm run format"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.ts"
+    }
   },
   "dependencies": {
     "pinia": "^2.3.0",
@@ -22,9 +41,14 @@
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
     "@vitejs/plugin-vue": "^5.2.1",
+    "commitlint": "^19.6.0",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-customizable": "^7.3.0",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.4.2",
     "typescript": "~5.6.2",
     "unplugin-auto-import": "^0.18.6",
