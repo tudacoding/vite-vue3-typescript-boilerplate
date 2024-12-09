@@ -14,3 +14,6 @@ declare module '*.vue' {
 [x] thêm auto-import để không cần import những thư viện cơ bản
 [x] thêm pinia (khuyến nghị) để thay thế cho vuex để quản lý state
 [x] thêm vitest để viết test
+[x] thêm eslint, eslint-config-prettier để tránh xung đột với prettier
+[x] thêm prettier
+[] thêm commitlint
