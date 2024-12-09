@@ -12,3 +12,4 @@ declare module '*.vue' {
 
 [x] thêm alias path không dùng lib cho typescript ( sử dụng url)
 [x] thêm auto-import để không cần import những thư viện cơ bản
+[x] thêm pinia (khuyến nghị) để thay thế cho vuex để quản lý state

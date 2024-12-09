@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from "@components/HelloWorld.vue";
+import { useTestStore } from "@/store/test"; // Importing the test store
+
+const testStore = useTestStore(); // Creating an instance of the test store
 </script>
 
 <template>
@@ -14,6 +17,9 @@ import HelloWorld from "@components/HelloWorld.vue";
   <HelloWorld msg="Vite + Vue" />
   <p>
     <strong>Current route path:</strong> {{ $route.fullPath }}
+  </p>
+  <p>
+    <strong>Current count:</strong> {{ testStore.count }} <!-- Displaying the current count from the store -->
   </p>
   <nav>
     <RouterLink to="/">Go to Home</RouterLink>
