@@ -16,4 +16,4 @@ declare module '*.vue' {
 [x] thêm vitest để viết test
 [x] thêm eslint, eslint-config-prettier để tránh xung đột với prettier
 [x] thêm prettier
-[] thêm commitlint
+[x] thêm commitlint
