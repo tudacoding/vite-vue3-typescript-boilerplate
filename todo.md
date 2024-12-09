@@ -10,4 +10,5 @@ declare module '*.vue' {
 }
 ```
 
-[x] thêm alias path không dùng lib cho typescript
+[x] thêm alias path không dùng lib cho typescript ( sử dụng url)
+[x] thêm auto-import để không cần import những thư viện cơ bản
