@@ -1,5 +1,91 @@
-# Vue 3 + TypeScript + Vite
+# Vite Vue 3 TypeScript Boilerplate
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern and feature-rich boilerplate for Vue 3 projects using TypeScript and Vite.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Author
+
+[TudaCoding](https://github.com/tudacoding) 🚀
+
+## Features
+
+- ⚡️ [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- 🚦 [Vue Router](https://router.vuejs.org/) for client-side routing
+- 📦 [Pinia](https://pinia.vuejs.org/) for state management
+- 🔍 [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for code linting and formatting
+  - Includes `eslint-config-prettier` to avoid conflicts
+- 🧪 [Vitest](https://vitest.dev/) for unit testing
+- 📝 [Commitlint](https://commitlint.js.org/) for commit message linting
+- 📁 TypeScript path aliases configuration
+- 🔄 Auto-import for Vue composables and APIs
+
+## Prerequisites
+
+- Node.js (version 16 or higher)
+- pnpm (version 8 or higher)
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+```
+
+## Scripts
+
+```bash
+# Development
+pnpm dev
+
+# Build
+pnpm build
+
+# Preview production build
+pnpm preview
+
+# Run tests
+pnpm test
+
+# Lint
+pnpm lint
+
+# Format code
+pnpm format
+```
+
+## Project Structure
+
+```
+.
+├── src/
+│   ├── assets/          # Static assets
+│   ├── components/      # Vue components
+│   ├── router/          # Vue Router configuration
+│   ├── stores/          # Pinia stores
+│   ├── views/           # Page components
+│   ├── App.vue          # Root component
+│   └── main.ts          # Application entry point
+├── tests/               # Test files
+├── .eslintrc           # ESLint configuration
+├── .prettierrc         # Prettier configuration
+├── commitlint.config.js # Commitlint configuration
+├── tsconfig.json       # TypeScript configuration
+└── vite.config.ts      # Vite configuration
+```
+
+## TypeScript Support
+
+The project includes full TypeScript support with path aliases configuration. Vue components can be written using TypeScript with the `<script setup lang="ts">` syntax.
+
+## Contributing
+
+Please make sure to follow the commit message conventions enforced by commitlint when contributing to this project.
+
+## License
+
+[MIT License](LICENSE)
