@@ -17,6 +17,7 @@ A modern and feature-rich boilerplate for Vue 3 projects using TypeScript and Vi
 - 📝 [Commitlint](https://commitlint.js.org/) for commit message linting
 - 📁 TypeScript path aliases configuration
 - 🔄 Auto-import for Vue composables and APIs
+- 🎨 [Vuetify](https://vuetifyjs.com/en/) for UI components and styling
 
 ## Prerequisites
 

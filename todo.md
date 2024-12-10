@@ -17,3 +17,4 @@ declare module '*.vue' {
 [x] thêm eslint, eslint-config-prettier để tránh xung đột với prettier
 [x] thêm prettier
 [x] thêm commitlint
+[x] thêm vuetify
